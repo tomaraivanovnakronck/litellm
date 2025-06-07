@@ -75,4 +75,4 @@ EXPOSE 4000/tcp
 ENTRYPOINT ["docker/prod_entrypoint.sh"]
 
 # Append "--detailed_debug" to the end of CMD to view detailed debug logs
-CMD ["--port", "4000", "--config", ""]
+CMD ["--port", "4000", "--config", "proxy_server_config.yaml", "--detailed_debug"]
